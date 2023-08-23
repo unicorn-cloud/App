@@ -19,5 +19,6 @@ function login(f){
     var password = f.password.value;
 
     alert("login");
-    return false; //do not post data
+    $("#loginform").submit();
+    return true; //false; //do not post data
 }
