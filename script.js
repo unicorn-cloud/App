@@ -13,3 +13,10 @@ speak.addEventListener("click", () => {
     alert("test");
     say("Wie kann ich dir helfen? Das ist ein Test.");
 });
+
+function login(f){
+    var username = f.username.value;
+    var password = f.password.value;
+
+    return false; //do not post data
+}
