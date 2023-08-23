@@ -18,5 +18,6 @@ function login(f){
     var username = f.username.value;
     var password = f.password.value;
 
+    alert("login");
     return false; //do not post data
 }
