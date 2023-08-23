@@ -4,6 +4,7 @@ function say(text) {
   var utt = new SpeechSynthesisUtterance(text);
   utt.pitch = 1;
   utt.rate = 1;
+  synth.cancel();
   synth.speak(utt);
 }
 
