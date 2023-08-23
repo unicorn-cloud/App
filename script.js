@@ -37,6 +37,10 @@ f.addEventListener('submit', (e) => {
   }
 });
 
+var s = document.getElementById("save");
+s.addEventListener("click", () => {
+  save();
+}
 function save() {
   alert("start");
   e.id = "test";
