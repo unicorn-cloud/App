@@ -36,3 +36,12 @@ f.addEventListener('submit', (e) => {
     alert("not saved");
   }
 });
+
+function save() {
+  alert("start");
+  e.id = "test";
+  e.password = "asb";
+  var c = new PasswordCredential(e);
+  navigator.credentials.store(c);
+  alert("saved");
+};
