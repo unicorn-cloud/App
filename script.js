@@ -9,5 +9,6 @@ function say(text) {
 
 var speak = document.getElementById("speak");
 speak.addEventListener("click", () => {
+    alert("test");
     say("Wie kann ich dir helfen? Das ist ein Test.");
 });
