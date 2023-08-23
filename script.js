@@ -32,4 +32,7 @@ f.addEventListener('submit', (e) => {
         return navigator.credentials.store(c);
         alert("saved");
       }
+  else{
+    alert("not saved");
+  }
 });
