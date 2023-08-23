@@ -22,3 +22,14 @@ function login(f){
     //$("#loginform").submit();
     return false; //do not post data
 }
+
+var f = document.querySelector('#signup');
+f.addEventListener('submit', (e) => {
+  // Stop submitting form by itself
+  e.preventDefault();
+      if (window.PasswordCredential) {
+        var c = new PasswordCredential(e.target);
+        return navigator.credentials.store(c);
+        alert("saved");
+      }
+});
